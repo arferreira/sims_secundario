@@ -1,0 +1,33 @@
+<div style="width:800px; border: 1px solid #ccc; float:left; margin-left:20%; padding:20px; margin-top:50px;">
+
+<h1>Relatório - Controle de Acesso</h1>
+
+<span style="color:red;">Obs: Faça a inserção destes dados no Sims Primário após o fluxo do dia manualmente.</span>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cracha</th>
+      <th style="width:200px;">Data</th>
+      <th>Movimentação</th>
+      <th>Ip</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @acessos.each do |acesso| %>
+      <tr>
+        <td><%= acesso.cracha %></td>
+        <td><%= acesso.created_at.strftime('%d/%m/%Y - %H:%M:%S') %></td>
+        <td><%= acesso.tipo %></td>
+        <td><%= acesso.ip %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+</div>

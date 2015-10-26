@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cracha: MyString
+  data: 2015-10-19
+  ip: MyString
+
+two:
+  cracha: MyString
+  data: 2015-10-19
+  ip: MyString

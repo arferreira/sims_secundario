@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SIMs-Controle</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="/css/datepicker.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/style_pesquisa.css">
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+<div class="topo">
+	<%= render 'partial/menuPesquisa' %>
+</div>
+<%= yield %>
+
+</body>
+
+</html>

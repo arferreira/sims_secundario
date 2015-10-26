@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cracha:</strong>
+  <%= @acesso.cracha %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @acesso.data %>
+</p>
+
+<p>
+  <strong>Ip:</strong>
+  <%= @acesso.ip %>
+</p>
+
+<p>
+  <strong>Ip:</strong>
+  <%= @acesso.tipo %>
+</p>
+
+<%= link_to 'Edit', edit_acesso_path(@acesso) %> |
+<%= link_to 'Back', acessos_path %>

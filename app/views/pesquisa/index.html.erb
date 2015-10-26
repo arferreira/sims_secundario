@@ -1,0 +1,23 @@
+<blockquote>
+<fieldset>
+	
+	<span style="font-weight:bold;">Periodo:</span>
+<%= search_form_for @q do |f| %>
+
+	<%= f.search_field :created_at_in, :class => 'datepicker' %> 
+  
+
+
+
+  <%= f.submit 'Pesquisar' %>
+<% end %>
+
+</fieldset>
+
+</blockquote>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+</script>

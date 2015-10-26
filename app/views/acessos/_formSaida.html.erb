@@ -1,0 +1,22 @@
+<%= form_for(@acesso) do |f| %>
+  <% if @acesso.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@acesso.errors.count, "error") %> prohibited this acesso from being saved:</h2>
+
+      <ul>
+      <% @acesso.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <span>Crachá</span><br>
+    <%= f.text_field :cracha, :placeholder => 'Saída' %>
+    <%= f.hidden_field :tipo, :value => "Saida" %>
+    <%= f.hidden_field :ip, :value => request.remote_ip %>
+  </div>
+
+<% end %>
+

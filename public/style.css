@@ -1,0 +1,63 @@
+body{ margin: 0 auto;}
+
+.topo{
+	width:100%; 
+	height:65px; 
+	background:#096; 
+	color:white;
+}
+
+#menu ul {
+	padding:0px;
+	list-style:none;
+	float: left;
+	margin-left: 15px;
+	margin-top: 25px;
+}
+
+#menu ul li { display: inline; }
+
+#menu ul li a {
+	padding: 2px 10px;
+	display: inline-block;
+	color: #FFF;
+	text-decoration: none;
+
+}
+
+#menu ul li a:hover {
+	color: #F8F8F8;
+	background: none;
+}
+
+#envolve{width: 100%; margin-top: 30px; height: 600px;}
+#div_1{float: left; margin-left: 40px;}
+#div_2{float: left; margin-left: 90px;}
+
+input{ height: 40px; border-radius: 5px; width: 300px; font-size: 24px; border:1px solid black; padding: 5px;}
+
+#alerta{width: 100%; font-weight: bold; padding: 15px; float: left; background: #FFFF00; color: #000; border: solid 1px #000; border-radius: 5px; font-size: 16px;}
+
+table tbody tr:nth-child(2n+1) {
+background:lightgray;
+}
+
+#error_explanation{
+text-align: left;
+font-weight: bold;
+padding: 5px 5px 5px 15px;
+font-size: 12px;
+margin: -7px -7px 0px;
+background-color: #FFF;
+color: #000;
+border:1px solid #ccc;
+}
+#error_explanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px -7px 0px;
+    background-color: #CCC;
+    color: #FFF;
+}
